@@ -26,7 +26,7 @@
         </a>
         <span>
           1人あたり:
-          <span class="text_yen">{{ome_exam}}円</span>
+          <span class="text_yen">{{ome_exam | addComma}}円</span>
         </span>
       </div>
       <div>
@@ -35,7 +35,7 @@
         </a>
         <span>
           1人あたり:
-          <span class="text_yen">{{sukuname_exam}}円</span>
+          <span class="text_yen">{{sukuname_exam | addComma}}円</span>
         </span>
       </div>
       <div class="flex-box">
@@ -44,7 +44,7 @@
             <span>支払金額</span>
           </a>
           <p>
-            <span class="text_yen">{{pay_exam}}円</span>
+            <span class="text_yen">{{pay_exam | addComma}}円</span>
           </p>
         </div>
         <div>
@@ -52,7 +52,7 @@
             <span>おつり</span>
           </a>
           <p>
-            <span class="text_yen">{{change_exam}}円</span>
+            <span class="text_yen">{{change_exam | addComma}}円</span>
           </p>
         </div>
       </div>
@@ -127,6 +127,11 @@ export default {
   methods: {
     doAction() {
       this.calc = true;
+    }
+  },
+  filters: {
+    addComma: function(value) {
+      return value.toLocaleString();
     }
   }
 };
