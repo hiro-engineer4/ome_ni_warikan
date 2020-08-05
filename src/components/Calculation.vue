@@ -293,9 +293,7 @@ a.btn-flat2:hover:before {
 a.btn-flat3 {
   overflow: hidden;
   color: #fff;
-  border-radius: 0;
   background: #212529;
-  margin-bottom: 0;
 }
 
 a.btn-flat3 span {
@@ -306,36 +304,26 @@ a.btn-flat3:before {
   position: absolute;
   top: 0;
   left: 0;
-
-  width: 100px;
-  height: 100px;
-
+  width: 100%;
+  height: 100%;
   content: "";
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -webkit-transform: translateX(-80%) translateY(-25px);
-  transform: translateX(-80%) translateY(-25px);
-
-  border-radius: 50%;
+  -webkit-transform: translateX(-96%);
+  transform: translateX(-96%);
   background: #00b7ee;
 }
 
 a.btn-flat3:hover:before {
-  width: 400px;
-  height: 400px;
-
-  -webkit-transform: translateX(-1%) translateY(-175px);
-
-  transform: translateX(-1%) translateY(-175px);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 /* おつり */
 a.btn-flat4 {
   overflow: hidden;
   color: #fff;
-  border-radius: 0;
   background: #212529;
-  margin-bottom: 0;
 }
 
 a.btn-flat4 span {
@@ -346,27 +334,19 @@ a.btn-flat4:before {
   position: absolute;
   top: 0;
   left: 0;
-
-  width: 100px;
-  height: 100px;
-
+  width: 100%;
+  height: 100%;
   content: "";
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -webkit-transform: translateX(-80%) translateY(-25px);
-  transform: translateX(-80%) translateY(-25px);
-
-  border-radius: 50%;
+  -webkit-transform: translateX(-96%);
+  transform: translateX(-96%);
   background: #fcaa00;
 }
 
 a.btn-flat4:hover:before {
-  width: 400px;
-  height: 400px;
-
-  -webkit-transform: translateX(-1%) translateY(-175px);
-
-  transform: translateX(-1%) translateY(-175px);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 @media screen and (max-width: 480px) {
