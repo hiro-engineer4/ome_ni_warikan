@@ -1,32 +1,29 @@
 <template>
   <div>
-    <p class="type">
-      <img src="@/assets/fat.png" />多めに払う人
-    </p>
+    <p class="type"><img src="@/assets/fat.png" />多めに払う人</p>
     <div>
       <input type="number" min="1" v-model="ome_people_num" />
     </div>
-    <p class="type">
-      <img src="@/assets/ojigi.png" />少なめに払う人
-    </p>
+    <p class="type"><img src="@/assets/ojigi.png" />少なめに払う人</p>
     <div>
       <input type="number" min="1" v-model="sukuname_people_num" />
     </div>
-    <p class="type">
-      <img src="@/assets/yen.png" />合計金額
-    </p>
+    <p class="type"><img src="@/assets/yen.png" />合計金額</p>
     <div>
       <input type="number" min="1" v-model="num" />
     </div>
     <a class="btn btn-malformation calc-btn" @click="doAction">計算する！</a>
-    <div v-if="calc && num > 0 && ome_people_num > 0 && sukuname_people_num > 0" class="text_exam">
+    <div
+      v-if="calc && num > 0 && ome_people_num > 0 && sukuname_people_num > 0"
+      class="text_exam"
+    >
       <div>
         <a class="btn btn-flat">
           <span>多めに払う人</span>
         </a>
         <span>
           1人あたり:
-          <span class="text_yen">{{ome_exam | addComma}}円</span>
+          <span class="text_yen">{{ ome_exam | addComma }}円</span>
         </span>
       </div>
       <div>
@@ -35,7 +32,7 @@
         </a>
         <span>
           1人あたり:
-          <span class="text_yen">{{sukuname_exam | addComma}}円</span>
+          <span class="text_yen">{{ sukuname_exam | addComma }}円</span>
         </span>
       </div>
       <div class="flex-box">
@@ -44,7 +41,7 @@
             <span>支払金額</span>
           </a>
           <p>
-            <span class="text_yen">{{pay_exam | addComma}}円</span>
+            <span class="text_yen">{{ pay_exam | addComma }}円</span>
           </p>
         </div>
         <div>
@@ -52,7 +49,7 @@
             <span>おつり</span>
           </a>
           <p>
-            <span class="text_yen">{{change_exam | addComma}}円</span>
+            <span class="text_yen">{{ change_exam | addComma }}円</span>
           </p>
         </div>
       </div>
@@ -347,6 +344,11 @@ a.btn-flat4:before {
 a.btn-flat4:hover:before {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
+}
+
+input[type="number"] {
+  font-size: 16px;
+  transform: scale(0.8);
 }
 
 @media screen and (max-width: 480px) {

@@ -23,7 +23,7 @@ export default {
 <style scoped>
 #app {
   text-align: center;
-  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  font-family: "Rounded Mplus 1c";
 }
 
 .title {
