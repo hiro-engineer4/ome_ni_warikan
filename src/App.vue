@@ -2,7 +2,7 @@
   <div id="app">
     <div class="btn-wrap">
       <h1 class="btn btn-border-shadow title">
-        <span class="text">多め ni 割り勘</span>
+        <span class="text">多め ni ワリカン</span>
       </h1>
     </div>
     <Calculation />
@@ -15,8 +15,8 @@ import Calculation from "./components/Calculation.vue";
 export default {
   name: "App",
   components: {
-    Calculation
-  }
+    Calculation,
+  },
 };
 </script>
 
