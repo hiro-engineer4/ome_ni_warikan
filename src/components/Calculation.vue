@@ -54,7 +54,7 @@
         </div>
       </div>
     </div>
-    <p>© 2020 cocoa-engineer</p>
+    <p>© 2022 cocoa-engineer</p>
   </div>
 </template>
 
@@ -66,7 +66,7 @@ export default {
       num: "",
       ome_people_num: 1,
       sukuname_people_num: 1,
-      calc: false
+      calc: false,
     };
   },
   computed: {
@@ -119,18 +119,18 @@ export default {
     },
     all_people_num() {
       return parseInt(this.ome_people_num) + parseInt(this.sukuname_people_num);
-    }
+    },
   },
   methods: {
     doAction() {
       this.calc = true;
-    }
+    },
   },
   filters: {
     addComma: function(value) {
       return value.toLocaleString();
-    }
-  }
+    },
+  },
 };
 </script>
 
